@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="description" content="">
+<title>Web App Test</title>
+<style>
+body{
+  background-color: dodgerblue;
+}
+.statusbar-overlay {
+    background: dodgerblue;
+}
+</style>
+</head>
+<body>
+  
+<h1>Web App Status Bar Background Color Test</h1>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+(function(){
+
+}){};
+
+//RUNNING IN APP MODE
+if(window.navigator.standalone){
+	//alert("APP MODE");
+	$("header").css("margin-top","35px");
+}else{
+	//alert("Desktop...");
+	$("header").css("margin-top","0");
+}
+</script>
+</body>
+</html>
